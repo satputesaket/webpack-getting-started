@@ -65,14 +65,17 @@
 /************************************************************************/
 /******/ ([
 /* 0 */,
-/* 1 */
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports) {
 
 console.log('I get called from display.js!');
 
 
 /***/ }),
-/* 2 */
+/* 5 */
 /***/ (function(module, exports) {
 
 
@@ -81,15 +84,12 @@ console.log('I get called from common.js!');
 
 
 /***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
 /* 6 */,
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-module.exports = __webpack_require__(2);
+__webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ })

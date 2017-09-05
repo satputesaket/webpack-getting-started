@@ -14,15 +14,17 @@ module.exports = {
   plugins:[
       new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({
-       title: 'Output Management'
+       title: 'index',
+       template: 'src/index.ejs',
+       chunks:['app']
      }),
       new HtmlWebpackPlugin({
-      title: 'My App',
+      title: 'admin',
       filename: 'modules/admin-mgmt/admin.html',
       chunks:['modules/admin-mgmt/admin']
     }),
       new HtmlWebpackPlugin({
-      title: 'My App',
+      title: 'member',
       filename: 'modules/member-mgmt/member.html',
       chunks:['modules/member-mgmt/member']
     })  
